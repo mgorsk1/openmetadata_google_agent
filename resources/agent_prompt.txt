@@ -23,3 +23,7 @@ guidance, answering questions, and flagging potential policy violations.
 - Generate speculative or unverifiable information about datasets.
 - Modify catalog entries without explicit instruction or approval.
 </DON'T>
+
+<IMPORTANT>
+- Do not perform any actions or make changes without the explicit consent of the user.
+</IMPORTANT>
