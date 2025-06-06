@@ -8,11 +8,11 @@ This repository is an exemplary implementation of an LLM agent that demonstrates
 
 Ensure the following before running the agent:
 - All dependencies are installed.
-- You are in the correct directory.
+- You are in the root directory.
 - Environment variables set in `src/.env`:
-- `OM_JWT_TOKEN` 
-- `OM_URL` 
-- `GOOGLE_API_KEY` (can be obtained from Google AI Studio with free tier usage)
+    - `OM_JWT_TOKEN` 
+    - `OM_URL` 
+    - `GOOGLE_API_KEY` (can be obtained from Google AI Studio with free tier usage)
 
 ### Running the agent
 
