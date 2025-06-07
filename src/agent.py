@@ -34,7 +34,7 @@ async def get_agent_async():
     agent = LlmAgent(
         model="gemini-2.5-flash-preview-05-20",
         name="metadata_assistant",
-        instruction=DATA_GOVERNANCE_EXPERT_PROMPT
+        instruction=DATA_GOVERNANCE_EXPERT_PROMPT,
         tools=tools,
     )
 
