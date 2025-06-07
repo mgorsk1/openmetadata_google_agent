@@ -6,6 +6,7 @@ from google.adk.tools.mcp_tool.mcp_toolset import (
 import os
 from rich import print
 from dotenv import load_dotenv
+from .prompt import DATA_GOVERNANCE_EXPERT_PROMPT  # Import prompt
 
 load_dotenv()
 
@@ -29,12 +30,11 @@ async def get_agent_async():
     """Creates an ADK Agent equipped with tools from the MCP Server."""
     tools, exit_stack = await get_tools_async()
     print(f"Fetched {len(tools)} tools from MCP server.")
-    module_dir = os.path.dirname(os.path.abspath(__file__))
-    instruction_path = os.path.join(module_dir, "../resources/agent_prompt.txt")
+    
     agent = LlmAgent(
         model="gemini-2.5-flash-preview-05-20",
         name="metadata_assistant",
-        instruction=open(instruction_path, "r").read().strip(),
+        instruction=DATA_GOVERNANCE_EXPERT_PROMPT,
         tools=tools,
     )
 
