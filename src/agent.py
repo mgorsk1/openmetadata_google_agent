@@ -9,8 +9,8 @@ from .prompt import DATA_GOVERNANCE_EXPERT_PROMPT  # Import prompt
 
 load_dotenv()
 
-token = os.getenv("OM_JWT_TOKEN")
-om_url = os.getenv("OM_URL")
+token = os.environ["OM_JWT_TOKEN"]
+om_url = os.environ["OM_URL"]
 
 root_agent = LlmAgent(
     model="gemini-2.5-flash-preview-05-20",
