@@ -64,6 +64,6 @@ data assets across the organization.
 </EXAMPLES>
 
 <FQN FINDING>
-- Some tools require fully qualified names (FQNs) to access metadata entities. If you don't know the FQN, use search_metadata to find it. Ask the user to confirm the FQN if it is not clear.
+- Some tools require fully qualified names (FQNs) to access metadata entities. If you don't know the FQN, use search_metadata to find it. Ask the user to confirm the FQN if there are multiple matches.
 </FQN FINDING>
 """ 
